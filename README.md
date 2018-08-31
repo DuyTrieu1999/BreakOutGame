@@ -1,13 +1,15 @@
 game
 ====
 
+Test from intellij
+
 This project implements the game of Breakout.
 
-Name: 
+Name: Duy Trieu
 
 ### Timeline
 
-Start Date: 
+Start Date: 8/30/2018
 
 Finish Date: 
 
