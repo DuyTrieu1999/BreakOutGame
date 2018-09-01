@@ -1,0 +1,18 @@
+For my Break Out Game, I plan to achieve the following:
+
+1) A complete game play of the original Break Out Game, including controllable tile, bouncing ball(s), destroyable
+bricks, power ups, and also cheat keys
+
+2) The game will have three levels with different brick layouts, different power ups drop, and increasing difficulty
+comes from faster ball, and the last level would have a timer
+
+3) There will be three types of bricks in the game for player to destroy in order to clear a level: "normal brick" which
+can be destroyed when collide with the ball, "enhanced brick" which takes multiple collisions to destroy, and
+"wall brick" which can't be destroy and will be counted as part of the game environment.
+
+4) There will be three types of power ups in this game: "Multiple power up" which gives the player 2 more extra balls,
+"Length power up" which will increase the length of the tile, and ""
+
+5) The cheat keys will consist of the following arguments:
+
+6) The extra feature I am adding is:
