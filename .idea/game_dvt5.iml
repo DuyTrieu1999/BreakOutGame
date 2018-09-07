@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/lab_bounce/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lab_bounce/resources" type="java-resource" />
+      <excludePattern pattern="$MODULE_DIR$/../../game_dvt5/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
