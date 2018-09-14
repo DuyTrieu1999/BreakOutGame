@@ -1,4 +1,4 @@
-package example;
+package breakerGame;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 
 
 /**
- * A basic example JavaFX program for the first lab.
+ * A basic breakerGame JavaFX program for the first lab.
  *
  * @author Robert C. Duvall
  */

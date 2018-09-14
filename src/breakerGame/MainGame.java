@@ -1,4 +1,4 @@
-package example;
+package breakerGame;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;

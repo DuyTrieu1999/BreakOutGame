@@ -1,4 +1,4 @@
-package example;
+package breakerGame;
 
 import javafx.scene.Group;
 import javafx.scene.Scene;

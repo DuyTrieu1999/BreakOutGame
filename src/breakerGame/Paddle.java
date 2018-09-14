@@ -1,12 +1,7 @@
-package example;
+package breakerGame;
 
-import javafx.geometry.Point2D;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
-
-import java.util.Date;
 
 public class Paddle {
     public static final int MOVER_SIZE_X = 50;

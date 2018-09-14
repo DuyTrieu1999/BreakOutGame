@@ -1,4 +1,4 @@
-package example;
+package breakerGame;
 
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
