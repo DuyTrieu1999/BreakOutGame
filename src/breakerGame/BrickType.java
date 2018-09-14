@@ -3,20 +3,34 @@ package breakerGame;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
+// This entire file, along with PowerUp.java, and Brick.java is part of my masterpiece
+// Duy Trieu (dvt5)
+
+/**
+ * BrickType Class: Manage the types of a brick
+ *
+ * @author duytrieu
+ */
 public class BrickType {
     private int life;
     private int point;
     private ImageView image;
     private PowerUp pwu;
-
     public static final String HIGH_BRICK = "brick4.gif";
     public static final String MEDIUM_BRICK = "brick1.gif";
     public static final String LOW_BRICK = "brick2.gif";
-
     public static final String MULTI_BALL_BRICK = "brick10.gif";
     public static final String LARGE_PADDLE_BRICK = "brick5.gif";
-    public static final String BIG_BALL_BRICK = "brick2.gif";
+    public static final String BIG_BALL_BRICK = "brick3.gif";
 
+    /**
+     * Constructor of the BrickType class
+     *
+     * @param brickLife
+     * @param point
+     * @param imgGif
+     * @param pwu
+     */
     BrickType (int brickLife, int point, String imgGif, PowerUp pwu) {
         this.life = brickLife;
         this.point = point;
@@ -26,6 +40,7 @@ public class BrickType {
             this.pwu = pwu;
         }
     }
+    // manages bricks with no power up
     BrickType (int brickLife, int point, String imgGif) {
         this(brickLife, point, imgGif, null);
     }
@@ -33,36 +48,23 @@ public class BrickType {
     public int getLife(){return this.life;}
     public int getPoint(){return this.point;}
     public ImageView getView(){return this.image;}
-
     public void setLife(int life){this.life = life;}
 
     public static final BrickType HIGH = new BrickType(3,30,HIGH_BRICK);
     public static final BrickType MEDIUM = new BrickType(2,20,MEDIUM_BRICK);
     public static final BrickType LOW = new BrickType(1,10,LOW_BRICK);
-
     public static final BrickType MULTI_BRICK = new BrickType(1, 10, MULTI_BALL_BRICK, PowerUp.MULTI_BALL);
     public static final BrickType LARGE_BRICK = new BrickType(1, 10, LARGE_PADDLE_BRICK, PowerUp.LONG_PADDLE);
     public static final BrickType BIG_B_BRICK = new BrickType(1,10,BIG_BALL_BRICK, PowerUp.BIG_BALL);
 
+    // return the BrickType through name of the brick
     public static BrickType stringToBrickType(String s){
-        if (s.equals("HIGH")){
-            return HIGH;
-        }
-        else if (s.equals("MEDIUM")){
-            return MEDIUM;
-        }
-        else if (s.equals("MULTI_BRICK")){
-            return MULTI_BRICK;
-        }
-        else if (s.equals("LARGE_BRICK")){
-            return LARGE_BRICK;
-        }
-        else if (s.equals("BIG_B_BRICK")){
-            return BIG_B_BRICK;
-        }
-        else {
-            return LOW;
-        }
+        if (s.equals("HIGH")){ return HIGH; }
+        else if (s.equals("MEDIUM")){ return MEDIUM; }
+        else if (s.equals("MULTI_BRICK")){ return MULTI_BRICK; }
+        else if (s.equals("LARGE_BRICK")){ return LARGE_BRICK; }
+        else if (s.equals("BIG_B_BRICK")){ return BIG_B_BRICK; }
+        else { return LOW; }
     }
     public Image getImg () {
         return this.image.getImage();
