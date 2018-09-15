@@ -14,6 +14,7 @@ as updating power ups.
 * Overall, the MainGame.java class would call and spawn all other game
 objects, as well as updating the scores and lives. The LevelControl.java
 class would add levels from MainGame, and Transition.
+
 ##How to add new features
 * To add in a new level, first we need to update a new text file outlining
 the brick map. This is usually named as map_no.txt, and is stored in the
@@ -43,6 +44,7 @@ We would then go to the BrickType.java and Brick.java class to
 update another brick type. We then go the Paddle.java class to add 
 another function on how the paddle would interact with the power up,
 and then call that function in the PowerUp.java class.
+
 ##Design trade-offs
 1. For PowerUp.java, I decided to create a new power up by updating 
 many classes: BrickType, Brick, and Paddle. The pros for this is that
