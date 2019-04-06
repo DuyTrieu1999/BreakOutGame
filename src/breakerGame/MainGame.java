@@ -77,7 +77,7 @@ public class MainGame {
         }
     }
 
-    public void run () {
+    protected void run () {
         var frame = new KeyFrame(Duration.millis(MILLISECOND_DELAY), e -> step(SECOND_DELAY));
         animation = new Timeline();
         animation.setCycleCount(Timeline.INDEFINITE);

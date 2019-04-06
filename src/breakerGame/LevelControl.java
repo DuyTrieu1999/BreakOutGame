@@ -27,7 +27,10 @@ public class LevelControl extends Application {
         Scene scene1 = level1.getGameScene();
         Scene scene2 = level2.getGameScene();
         Scene winnerScene = winnerPage.init(400, 400, "You won!!");
-        opening.setNextSceneHandler(()->{stage.setScene(scene1);level1.run();});
+        opening.setNextSceneHandler(()->{
+            stage.setScene(scene1);
+            level1.run();
+        });
         level1.setNextSceneHandler(() -> {stage.setScene(sceneBtwLevel);});
         transitionPage.setNextSceneHandler(()->{stage.setScene(scene2);level2.run();});
         level2.setNextSceneHandler(() -> {stage.setScene(winnerScene);});

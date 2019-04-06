@@ -30,7 +30,7 @@ public class Ball {
         myView.setX(dx);
         myView.setY(dy);
         // turn speed into velocity that can be updated on bounces
-        myVelocity = new Point2D(-50, BOUNCER_SPEED);
+        myVelocity = new Point2D(100, 100);
     }
 
     /**
